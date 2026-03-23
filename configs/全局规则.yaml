@@ -1,0 +1,30 @@
+输入文件: data/输入表格/input.xlsx
+默认样本条数: 20
+输出目录:
+  原始数据: data/原始数据
+  分桶结果: data/分桶结果
+  自动处理队列: data/自动处理队列
+  人工复核队列: data/人工复核队列
+阶段输出文件名:
+  导入:
+    jsonl: 原始样本.jsonl
+    xlsx: 原始样本.xlsx
+  轻预洗:
+    jsonl: 轻预洗样本.jsonl
+    xlsx: 轻预洗样本.xlsx
+  分桶:
+    jsonl: 分桶样本.jsonl
+    xlsx: 分桶样本.xlsx
+  分流_自动处理:
+    jsonl: 自动处理样本.jsonl
+    xlsx: 自动处理样本.xlsx
+  分流_人工复核:
+    jsonl: 人工复核样本.jsonl
+    xlsx: 人工复核样本.xlsx
+运行约束:
+  仅支持小样本: true
+  支持全量: false
+  扩展到脱壳: false
+  扩展到中文金标转换: false
+  复杂批次特判: false
+  自动猜测公式含义: false
